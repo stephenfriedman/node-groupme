@@ -110,7 +110,6 @@ if (process.argv.length == 3) {
 
         API.Bots.index(ACCESS_TOKEN, function(err,ret) {
             if (!err) {
-                var botdeets;
                 for (var i = 0; i < ret.length; i++) {
                     if (ret[i].name == BOT_NAME) {
                         bot_id = ret[i].bot_id;
